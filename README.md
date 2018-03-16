@@ -25,8 +25,8 @@ Sources for HLS core development of convolution layers using Xilinx HLS.
 - Pynq Framework tag v1.4
 
 ## Howto
-The application searches for weight extracted to txt format in "~/resources/weights" directory on Pynq. 
-Bitstreams must be located "~/pynq/bitstreams"
+The application searches for weight extracted to txt format in "home/resources/weights" directory on Pynq. 
+Bitstreams must be located "home/pynq/bitstreams"
 1. Connect Pynq to HDMI source and sink
 2. Execute startUp.py to program FPGA, allocate continous memory and initialize HDMI (sudo)
 3. As root start Landmark.elf file which should be located in home
