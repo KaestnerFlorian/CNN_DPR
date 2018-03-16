@@ -1,0 +1,86 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.8  2016-12-21 bk=1.3817 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port S_AXI_LITE -pg 1 -y 780 -defaultsOSRD
+preplace port S02_AXI -pg 1 -y 70 -defaultsOSRD
+preplace port TMDS1 -pg 1 -y 560 -defaultsOSRD
+preplace port TMDS -pg 1 -y 890 -defaultsOSRD
+preplace port ctrl -pg 1 -y 320 -defaultsOSRD
+preplace port mm2s_introut -pg 1 -y 800 -defaultsOSRD
+preplace port m_axi_s2mm_aclk -pg 1 -y 670 -defaultsOSRD
+preplace port RefClk -pg 1 -y 580 -defaultsOSRD
+preplace port S_AXI -pg 1 -y 1240 -defaultsOSRD
+preplace port ctrl1 -pg 1 -y 510 -defaultsOSRD
+preplace port s00_axi -pg 1 -y 970 -defaultsOSRD
+preplace port s2mm_introut -pg 1 -y 820 -defaultsOSRD
+preplace port irq1 -pg 1 -y 670 -defaultsOSRD
+preplace port ip2intc_irpt1 -pg 1 -y 1160 -defaultsOSRD
+preplace port ip2intc_irpt -pg 1 -y 1280 -defaultsOSRD
+preplace port irq -pg 1 -y 410 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y 850 -defaultsOSRD
+preplace port DDC -pg 1 -y 530 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -y 1100 -defaultsOSRD
+preplace port REF_CLK_I -pg 1 -y 990 -defaultsOSRD
+preplace port M00_AXI -pg 1 -y 140 -defaultsOSRD
+preplace portBus s00_axi_aresetn -pg 1 -y 600 -defaultsOSRD
+preplace portBus ARESETN -pg 1 -y 110 -defaultsOSRD
+preplace portBus gpio_io_o1 -pg 1 -y 1100 -defaultsOSRD
+preplace portBus M00_ARESETN -pg 1 -y 150 -defaultsOSRD
+preplace portBus gpio_io_o -pg 1 -y 1260 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 4 -y 670 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 3 -y 750 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 5 -y 810 -defaultsOSRD
+preplace inst hdmi_out_hpd_video -pg 1 -lvl 5 -y 1350 -defaultsOSRD
+preplace inst v_tc_1 -pg 1 -lvl 5 -y 540 -defaultsOSRD
+preplace inst proc_sys_reset_pixelclk -pg 1 -lvl 1 -y 870 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 5 -y 1030 -defaultsOSRD
+preplace inst axi_gpio_video -pg 1 -lvl 5 -y 1200 -defaultsOSRD
+preplace inst axi_dynclk_0 -pg 1 -lvl 2 -y 1000 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 2 -y 650 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 130 -defaultsOSRD
+preplace inst dvi2rgb_0 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace netloc ctrl_1 1 0 5 -20J 480 NJ 480 NJ 480 NJ 480 1530J
+preplace netloc S_AXI_1 1 0 5 NJ 1240 NJ 1240 NJ 1240 NJ 1240 1470J
+preplace netloc S_AXI_LITE_1 1 0 3 NJ 780 NJ 780 730J
+preplace netloc ctrl1_1 1 0 5 NJ 320 NJ 320 NJ 320 NJ 320 1530J
+preplace netloc video_ip2intc_irpt1 1 5 1 1910J
+preplace netloc v_vid_in_axi4s_0_video_out 1 2 1 710
+preplace netloc video_ip2intc_irpt 1 5 1 1910J
+preplace netloc video_s2mm_introut 1 3 3 NJ 810 1520J 680 1910J
+preplace netloc axi_dynclk_0_PXL_CLK_O 1 2 3 720 630 1160 780 1540
+preplace netloc video_irq1 1 5 1 1910J
+preplace netloc S_AXI1_1 1 0 5 NJ 1100 NJ 1100 NJ 1100 NJ 1100 1470J
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 4 1 1480
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 3 2 1150 30 NJ
+preplace netloc video_irq 1 5 1 1900J
+preplace netloc hdmi_out_hpd_video_gpio_io_o 1 5 1 1890J
+preplace netloc axi_dynclk_0_LOCKED_O 1 2 3 NJ 1020 NJ 1020 N
+preplace netloc S02_AXI_1 1 0 5 -20J 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 3 1 1170
+preplace netloc proc_sys_reset_142M_interconnect_aresetn 1 0 5 -20J 90 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 1 NJ
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1890J
+preplace netloc video_mm2s_introut 1 3 3 NJ 790 1490J 670 1890J
+preplace netloc axi_dynclk_0_PXL_CLK_5X_O 1 2 3 NJ 1000 NJ 1000 1470
+preplace netloc video_aPixelClkLckd 1 0 6 0 960 370 920 NJ 920 NJ 920 1470J 950 1880
+preplace netloc video_PixelClk 1 0 5 0 500 390 500 NJ 500 NJ 500 N
+preplace netloc hdmi_in_1 1 0 1 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 5 -10 510 380 820 700 880 NJ 880 1510
+preplace netloc dvi2rgb_0_DDC 1 1 5 370J 410 NJ 410 NJ 410 NJ 410 1890J
+preplace netloc video_TMDS1 1 5 1 1910J
+preplace netloc s00_axi_1 1 0 2 NJ 970 NJ
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 1 410
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 4 400J 530 NJ 530 NJ 530 1520
+preplace netloc proc_sys_reset_142M_peripheral_aresetn 1 0 5 NJ 150 NJ 150 NJ 150 NJ 150 1500
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 NJ 990 420 870 750 870 NJ 870 1500
+preplace netloc v_tc_0_vtiming_out 1 3 3 1180 940 NJ 940 1880
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 3 2 1140 10 NJ
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 2 3 700 490 NJ 490 1540J
+preplace netloc axi_gpio_video_gpio_io_o 1 5 1 1900J
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 5 NJ 670 420 770 740 230 NJ 230 1530
+preplace netloc dvi2rgb_0_RGB 1 1 1 N
+preplace netloc processing_system7_0_FCLK_CLK2 1 0 1 NJ
+levelinfo -pg 1 -40 190 560 950 1340 1730 1950 -top -170 -bot 1420
+",
+}
+0
