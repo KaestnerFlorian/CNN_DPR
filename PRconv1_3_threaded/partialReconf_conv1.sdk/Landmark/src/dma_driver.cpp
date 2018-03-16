@@ -1,3 +1,10 @@
+/*
+*
+* Provided by
+* https://lauri.võsandi.com/hdl/zynq/xilinx-dma.html
+*
+*/
+
 #include "dma_driver.h"
 #include <stdio.h>
 #include <unistd.h>

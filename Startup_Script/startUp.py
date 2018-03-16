@@ -6,7 +6,6 @@ from pynq.drivers.video import VMODE_1920x1080
 # Overlay
 print()
 print("### Overlay Configuration ###")
-#ol= Overlay("convrelubuffpoolbigburst2dma.bit") # overlay for first IP core
 ol = Overlay("conv1ip.bit")
 ol.download() # downloading bitstream to fpga
 print("IPs recognized")

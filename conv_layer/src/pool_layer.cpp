@@ -16,27 +16,15 @@
 typedef ap_fixed<32,6> fixedData;
 
 void poolHW_depth(hls::stream<float>  &input, hls::stream<float> &outputStream){
-#pragma HLS DEPENDENCE intra true
-#pragma HLS DEPENDENCE inter true
 
 	// Port Description
 
-	#pragma HLS INTERFACE axis port=outputStream
-	#pragma HLS INTERFACE axis port=input
-	#pragma HLS INTERFACE s_axilite port=return
-
-
-
 	// Linebuffer for Filter Neighbourhood
 	hls::LineBuffer<KERNELSIZE*INPUT_HEIGHT,1,fixedData> linBuff;
-	#pragma HLS DEPENDENCE variable=linBuff intra true
-	#pragma HLS DEPENDENCE variable=linBuff inter true
 
 	// Inital Buffer Filling
 	// Buffer filled like 1. Collum 1. depth; 2. Collom 1. depth; 3. Collum 1. depth.....1. Collum 2. depth
 	for (int i = 0; i< KERNELSIZE*INPUT_HEIGHT; i++){
-	#pragma HLS DEPENDENCE intra true
-	#pragma HLS DEPENDENCE inter true
 
 		linBuff.shift_pixels_up(0);
 		float insertBuff = input.read();

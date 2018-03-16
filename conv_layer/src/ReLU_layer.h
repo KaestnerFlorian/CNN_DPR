@@ -25,7 +25,6 @@ private:
 
 
 // IMPLEMENTATION
-
 template <class type>
 relu_layer<type>::relu_layer()
 {
@@ -43,14 +42,6 @@ relu_layer<type>::relu_layer(struct layerParameter<type> lp, type *inputData, ty
 	this->inputDepth = lp.inputDepth;
 }
 
-
-
-// doing forward path (ReLu)
-//*******************************************************************************
-// TODO:
-// DONE: Yet hardcoded width, height, depht should be somehow passed to object
-//
-//*******************************************************************************
 
 template<class type>
 void relu_layer<type>::forward()

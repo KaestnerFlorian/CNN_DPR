@@ -57,7 +57,7 @@ relu_layer<type>::relu_layer(struct layerParameter<type> lp, type *inputData, ty
 // doing forward path (ReLu)
 //*******************************************************************************
 // TODO:
-// DONE: Yet hardcoded width, height, depht should be somehow passed to object
+// DONE: Yet hard coded width, height, depth should be somehow passed to object
 //
 //*******************************************************************************
 
@@ -77,8 +77,7 @@ void relu_layer<type>::forward()
 					this->outputData[heightCount][widthCount][depthCount] = 0;
 				else 
 					this->outputData[heightCount][widthCount][depthCount] = this->inputData[heightCount][widthCount][depthCount];
-				//cout << "Data Position: " << widthCount << " " << heightCount << " " << depthCount << endl;
-				//cout << "Data: " << outputData[heightCount][widthCount][depthCount] << endl;
+
 			}   
 		}
 	}

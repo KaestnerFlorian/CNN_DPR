@@ -1,9 +1,9 @@
 /*
- * dma_driver.h
- *
- *  Created on: 18.08.2017
- *      Author: frederik
- */
+*
+* Provided by
+* https://lauri.võsandi.com/hdl/zynq/xilinx-dma.html
+*
+*/
 
 #ifndef SRC_DMA_DRIVER_H_
 #define SRC_DMA_DRIVER_H_

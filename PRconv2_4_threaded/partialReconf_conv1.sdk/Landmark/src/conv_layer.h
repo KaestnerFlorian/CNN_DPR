@@ -134,11 +134,6 @@ void conv_layer<type>::forward()
 							int yn = picturey + filterx;
 
 							oneDepth = oneDepth + (convWeights[filterx][filtery][depth][filterNr] * inputData[xn][yn][depth]);
-							//cout << convWeights[filterx][filtery][depth][filterNr] << " " << inputData[xn][yn][depth] << endl;
-							//cout << "Filter X Koord. " << " Filter y Koord. " << " Pic. pos. x " << " Pic. pos. y " << " Depth " << " Filter Nr." << endl;
-							//cout << "        " << filterx << "                " << filtery << "               " << xn << "        " << yn << "          " << depth << "     " << filterNr << endl;
-							//cout << "Weight Value: " << convWeights[filterx][filtery][depth][filter] << " Picture Value: " << inputData[xn][yn][depth] << endl;
-							//cout << "Temp Value For 2D: " << oneDepth << endl;
 
 						}
 
@@ -146,14 +141,7 @@ void conv_layer<type>::forward()
 					allDepth = allDepth + oneDepth;
 					oneDepth = 0;
 				}
-				//cout << "Temp Value For all Depth: " << allDepth << endl << endl;
-				//cout << "Temp Value + Bias: " << allDepth << " + " << bias[filterNr] << endl;
 
-				// Adding Bias to Output Value ( one Bias for each filter (neuron) )
-				//cout << "Output Value: " << allDepth + bias[filterNr] << endl;
-				//cout << "Output Data Position: " << picturex << " " << picturey << " " << filterNr << endl << endl;
-				// writing convolution result to outputArray
-				//if ((allDepth + bias[filterNr]) < 0) cout << "#####################################################################################################" << endl << endl << endl << endl << endl;
 				outputData[picturex][picturey][filterNr] = allDepth+bias[filterNr]; // maybe wrong with bigger Stride
 				allDepth = 0;
 			}
